@@ -1,5 +1,6 @@
-# Case Studies in Machine Learning
+# What Goes Up...
 - University of Texas
+- Case Studies in Machine Learning
 - AI395T Fall 2024
 - Justin Hanson
 
