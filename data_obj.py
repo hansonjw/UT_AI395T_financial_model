@@ -26,13 +26,6 @@ class DataObj():
             else:
                 pass
 
-        # Do I need to focus on rates of change or just do the data outright?
-        # for col in df.columns:
-        #     if col not in ['Close', 'Close Norm', 'Daily Delta', '10 yr', 'CAGR 10 yr', '5 yr', 'CAGR 5 yr', 'US_Uemp', 'FF_Rate', 'AAA_Rate', 'US_Pop']:
-        #         # calculate daily percentage change
-        #         df[col] = (df[col]/df[col].shift()-1)*100
-        # df.at["1959-01-01", "US_M2"]=0
-
         self.df = df
         return
 
@@ -84,7 +77,8 @@ class MacroData:
         self.df = None
         self.df_list = []
 
-        self.fred_key = 'cdb183cd15a5bd74de6eef6ea2298e7d'
+        # Place fed key here to get this model to work
+        self.fred_key = ''
         self.fred_series = [
             {'fred_id': 'GDP', 'desc': 'US GDP', 'freq': 'Quarter', 'Name': 'US_GDP'},
             {'fred_id': 'UNRATE', 'desc': 'US Unemployement Rate', 'freq': 'Month', 'Name': 'US_Uemp'},
